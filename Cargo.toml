@@ -7,11 +7,9 @@ edition = "2021"
 
 [dependencies]
 anyhow = "1.0.72"
-#smithay = "0.3.0"
-
-[patch.crates-io]
-smithay = {git = 'https://github.com/Smithay/smithay.git'}
 
 [dependencies.smithay]
-#default-features = false
-#features = ["desktop", "wayland_frontend"]
+git = 'https://github.com/Smithay/smithay.git'
+default-features = false
+features = ["desktop", "wayland_frontend", "backend_winit"]
+
